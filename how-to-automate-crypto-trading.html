@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Automate Crypto Trading in 2026 — Zero Code Required | CryptoWedge</title>
+  <meta name="description" content="A practical, step-by-step guide to automating your crypto trading in 2026. From simple DCA setups to full grid bots — no programming required.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .step-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin: 28px 0; }
+    .step-number { display: inline-block; width: 40px; height: 40px; background: var(--accent); color: #fff; border-radius: 50%; text-align: center; line-height: 40px; font-weight: 700; font-size: 18px; margin-bottom: 16px; }
+    .step-card h2 { font-size: 22px; margin-bottom: 12px; }
+    .code-block { background: #0a0a10; border: 1px solid var(--border); border-radius: 8px; padding: 16px; font-family: 'Courier New', monospace; font-size: 13px; color: var(--accent2); overflow-x: auto; margin: 16px 0; }
+    .warning-box { background: rgba(255,82,82,0.1); border: 1px solid var(--red); border-radius: 8px; padding: 16px; margin: 20px 0; font-size: 14px; }
+    .warning-box strong { color: var(--red); }
+    .success-box { background: rgba(0,230,118,0.1); border: 1px solid var(--green); border-radius: 8px; padding: 16px; margin: 20px 0; font-size: 14px; }
+    .success-box strong { color: var(--green); }
+    .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin: 32px 0; }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin-bottom: 8px; font-size: 14px; color: var(--muted); }
+    .toc li a { color: var(--accent); }
+    .affiliate-note { background: rgba(108,99,255,0.1); border: 1px solid var(--accent); border-radius: 8px; padding: 16px; font-size: 13px; color: var(--muted); margin: 24px 0; }
+    .affiliate-note strong { color: var(--accent); }
+    .checklist li { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+    .checklist li::marker { content: "☑️ "; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">Crypto<span>Wedge</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="best-crypto-trading-bots.html">Trading Bots</a>
+      <a href="best-crypto-exchanges-2026.html">Exchanges</a>
+      <a href="how-to-automate-crypto-trading.html">Automation Guide</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="review-header" style="margin:40px 0;">
+    <div class="hero-badge" style="margin-bottom:16px;">⚡ Step-by-Step Guide</div>
+    <h1>How to Automate Crypto Trading in 2026</h1>
+    <p style="font-size:18px; color:var(--muted);">Zero coding required. We walk you through every option from simplest to most powerful — pick your level and follow the steps.</p>
+    <div class="review-meta" style="display:flex; gap:24px; font-size:14px; color:var(--muted); margin-top:16px;">
+      <span>⏱ 15 min to set up your first bot</span>
+      <span>💰 $0 to start (free bots)</span>
+      <span>🤖 Binance, Pionex, Freqtrade</span>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h3>📋 What Do You Want to Set Up?</h3>
+    <ol>
+      <li><a href="#level-1">Level 1 — DCA Bot (Set and Forget, 5 min)</a></li>
+      <li><a href="#level-2">Level 2 — Grid Bot (Earn on Sideways Markets, 10 min)</a></li>
+      <li><a href="#level-3">Level 3 — Full Trading Bot with Freqtrade (1-2 hours)</a></li>
+      <li><a href="#apisetup">API Key Setup (Required for All Levels)</a></li>
+      <li><a href="#safety">Risk Management & Safety Checklist</a></li>
+    </ol>
+  </div>
+
+  <div class="affiliate-note">
+    <strong>🤝 Affiliate note:</strong> This guide uses Binance and Pionex — both have affiliate programs. Signing up through our links helps support this site at zero cost to you.
+  </div>
+
+  <!-- Level 1: DCA -->
+  <div class="step-card" id="level-1">
+    <div class="step-number">1</div>
+    <h2>Level 1: DCA Bot — Set and Forget (Easiest)</h2>
+    <p>DCA (Dollar Cost Averaging) bots automatically buy crypto at regular intervals — daily, weekly, or custom. This is the simplest form of automation and works great for long-term accumulation.</p>
+    
+    <div class="success-box">
+      <strong>✅ Best for:</strong> Long-term investors who want to accumulate BTC/ETH without timing the market. No strategy knowledge needed.
+    </div>
+
+    <h4 style="margin-top:20px;">Step-by-Step: Set Up DCA on Binance</h4>
+    <ol style="padding-left:20px; font-size:14px; color:var(--muted);">
+      <li style="margin-bottom:8px;"><strong>Log into Binance</strong> (or <a href="https://www.binance.com" target="_blank" style="color:var(--accent);">create an account</a> if you don't have one)</li>
+      <li style="margin-bottom:8px;"><strong>Go to Derivative</strong> → <strong>DCA Bot</strong> (or use the mobile app: Trade → DCA Bot)</li>
+      <li style="margin-bottom:8px;"><strong>Choose your pair:</strong> BTC/USDT, ETH/USDT, or any spot pair you want to accumulate</li>
+      <li style="margin-bottom:8px;"><strong>Set your parameters:</strong>
+        <ul style="margin-top:8px; margin-left:16px;">
+          <li>Investment per order: $10–$100 (start small!)</li>
+          <li>Frequency: Daily or every few hours</li>
+          <li>Take profit target: 1–5% (optional — bot will sell when hit)</li>
+        </ul>
+      </li>
+      <li style="margin-bottom:8px;"><strong>Enable "Stop Loss"</strong> — always set this! We recommend 5–10% below entry</li>
+      <li><strong>Activate</strong> — you're done. Check back whenever you want.</li>
+    </ol>
+
+    <div class="warning-box">
+      <strong>⚠️ Important:</strong> Never set a DCA bot without a stop loss. In a prolonged bear market, you could accumulate into heavy losses without an exit plan.
+    </div>
+
+    <p style="margin-top:16px;"><strong>Time to set up:</strong> 5 minutes | <strong>Cost:</strong> Free (Binance spreads only)</p>
+  </div>
+
+  <!-- Level 2: Grid -->
+  <div class="step-card" id="level-2">
+    <div class="step-number">2</div>
+    <h2>Level 2: Grid Bot — Earn on Sideways Markets</h2>
+    <p>Grid bots work by placing buy orders at regular price intervals below the current price and sell orders above it. Every time the price oscillates, you earn. This works best in ranging/consolidating markets.</p>
+
+    <div class="success-box">
+      <strong>✅ Best for:</strong> Traders who expect a coin to trade in a range. Generates returns in choppy markets without needing to predict direction.
+    </div>
+
+    <h4 style="margin-top:20px;">Step-by-Step: Set Up Grid Bot on Binance</h4>
+    <ol style="padding-left:20px; font-size:14px; color:var(--muted);">
+      <li style="margin-bottom:8px;"><strong>Go to Trade</strong> → <strong>Grid Trading</strong> on Binance</li>
+      <li style="margin-bottom:8px;"><strong>Select your pair:</strong> Pick a coin with decent volatility but stable support — BTC/USDT is the standard starting pair</li>
+      <li style="margin-bottom:8px;"><strong>Set grid parameters:</strong>
+        <ul style="margin-top:8px; margin-left:16px;">
+          <li>Upper limit: Price where you want to stop selling</li>
+          <li>Lower limit: Price where you want to stop buying (set stop loss here!)</li>
+          <li>Number of grids: 10–50 is typical (more grids = smaller profit per grid, lower risk)</li>
+          <li>Investment amount: How much total USDT you're putting in</li>
+        </ul>
+      </li>
+      <li style="margin-bottom:8px;"><strong>BNB Discount:</strong> Enable this to use BNB for fee payment and get a 25% discount</li>
+      <li><strong>Activate</strong> — monitor in the Grid Bot dashboard</li>
+    </ol>
+
+    <h4 style="margin-top:20px;">Grid Bot on Pionex (Even Simpler)</h4>
+    <p style="font-size:14px; color:var(--muted);">Pionex's grid bot is even easier — just pick the pair, choose "Grid Bot," set upper/lower limits, and activate. <a href="https://www.pionex.com" target="_blank" style="color:var(--accent);">Try Pionex free →</a></p>
+
+    <div class="warning-box">
+      <strong>⚠️ Grid bots can lose money</strong> if the price breaks below your lower limit without a stop loss. Always set stop loss below your lower grid limit. Grid bots are not "set and forget forever" — check them weekly.
+    </div>
+
+    <p style="margin-top:16px;"><strong>Time to set up:</strong> 10 minutes | <strong>Cost:</strong> Free (fees apply per trade, ~0.05%)</p>
+  </div>
+
+  <!-- Level 3: Freqtrade -->
+  <div class="step-card" id="level-3">
+    <div class="step-number">3</div>
+    <h2>Level 3: Freqtrade — Full Strategy Automation</h2>
+    <p>Freqtrade is the most powerful option — an open-source Python bot with full backtesting, custom strategies, and multi-pair trading. This requires more effort but gives you complete control.</p>
+
+    <div class="success-box">
+      <strong>✅ Best for:</strong> Serious traders who want to test and automate custom strategies. Not for absolute beginners — requires comfort with the command line.
+    </div>
+
+    <h4 style="margin-top:20px;">What You'll Need</h4>
+    <ul class="checklist">
+      <li>A VPS or computer that can run 24/7 (a $10/month VPS works fine)</li>
+      <li>Python 3.10+ installed</li>
+      <li>An exchange account with API keys (Binance recommended)</li>
+      <li>1–2 hours for initial setup</li>
+    </ul>
+
+    <h4 style="margin-top:20px;">Step-by-Step: Install Freqtrade</h4>
+    <div class="code-block">
+# 1. Install Docker (easiest way)
+curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
+
+# 2. Create freqtrade directory
+mkdir -p ~/freqtrade && cd ~/freqtrade
+
+# 3. Download docker-compose config
+wget https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docker/docker-compose.yml
+
+# 4. Create config file (fill in your API keys)
+cp config.example.json config.json
+
+# 5. Edit config.json with your Binance API keys
+nano config.json
+
+# 6. Start Freqtrade
+docker-compose up -d
+    </div>
+
+    <h4 style="margin-top:20px;">Connect to Binance API</h4>
+    <ol style="padding-left:20px; font-size:14px; color:var(--muted);">
+      <li style="margin-bottom:8px;"><strong>Go to Binance.com</strong> → Account → API Management</li>
+      <li style="margin-bottom:8px;"><strong>Create new API key</strong> — select "System-generated" (most secure)</li>
+      <li style="margin-bottom:8px;"><strong>Set permissions:</strong> Enable Spot & Margin Trading. Do NOT enable withdrawals.</li>
+      <li style="margin-bottom:8px;"><strong>Add IP whitelist:</strong> Add your VPS IP (or leave open for testing)</li>
+      <li style="margin-bottom:8px;"><strong>Copy API Key + Secret</strong> into your config.json</li>
+    </ol>
+
+    <div class="warning-box">
+      <strong>⚠️ Security:</strong> Never give withdrawal permissions to a bot API key. If your key is compromised, a withdrawal-enabled key means they can drain your account. Spot trading only for bot keys.
+    </div>
+
+    <h4 style="margin-top:20px;">Download and Run a Strategy</h4>
+    <div class="code-block">
+# Download Freqtrade's default strategies
+cd ~/freqtrade/user_data/strategies
+wget https://raw.githubusercontent.com/freqtrade/freqtrade/develop/freqtrade/templates/Freqtrade/templates/Strategy.json
+
+# List available strategies
+docker-compose run --rm freqtrade list-strategies
+
+# Start bot with a strategy
+docker-compose run --rm freqtrade trade --strategy StrategyName --pairs BTCUSDT ETHUSDT
+    </div>
+
+    <h4 style="margin-top:20px;">Backtest Before Going Live</h4>
+    <p style="font-size:14px; color:var(--muted);">Always backtest first! Freqtrade has 2 years of data built in:</p>
+    <div class="code-block">
+# Run a backtest on 4H timeframe, last 90 days
+docker-compose run --rm freqtrade backtesting \\
+  --strategy YourStrategy \\
+  --timerange 20251201-20260331 \\
+  --timeframe 4h \\
+  --pairs BTCUSDT ETHUSDT
+    </div>
+
+    <h4 style="margin-top:20px;">Go Live (Dry-Run First!)</h4>
+    <div class="code-block">
+# Start in dry-run mode (simulated trades, no real money)
+docker-compose run --rm freqtrade trade \\
+  --strategy YourStrategy \\
+  --dry-run \\
+  --pairs BTCUSDT ETHUSDT
+
+# When ready for real trading, remove --dry-run
+# MAKE SURE you've tested in dry-run first!
+    </div>
+
+    <p style="margin-top:16px;"><strong>Time to set up:</strong> 1–2 hours first time | <strong>Cost:</strong> Free (exchange fees apply)</p>
+  </div>
+
+  <!-- API Setup -->
+  <div class="step-card" id="apisetup">
+    <div class="step-number">⚙️</div>
+    <h2>API Key Setup — Critical for All Methods</h2>
+    <p>Every automated trading method requires API keys. Here's how to do it safely on Binance.</p>
+
+    <h4>Step 1: Create API Key on Binance</h4>
+    <ol style="padding-left:20px; font-size:14px; color:var(--muted);">
+      <li style="margin-bottom:8px;">Log into Binance → Profile Icon → API Management</li>
+      <li style="margin-bottom:8px;">Click "Create API" → Choose "System-generated" (most secure)</li>
+      <li style="margin-bottom:8px;">Name your key (e.g., "Trading Bot Only")</li>
+      <li style="margin-bottom:8px;"><strong>Permissions to enable:</strong>
+        <ul style="margin-top:8px; margin-left:16px;">
+          <li>✅ Enable Spot & Margin Trading</li>
+          <li>✅ Enable USDT-M Futures (if using futures bots)</li>
+          <li>❌ DO NOT enable: Withdrawals, Internal Transfer, P2P</li>
+        </ul>
+      </li>
+      <li style="margin-bottom:8px;"><strong>IP restriction:</strong> Add your VPS/server IP if you know it. This is highly recommended for security.</li>
+      <li>Complete 2FA verification — your API key is ready.</li>
+    </ol>
+
+    <div class="warning-box">
+      <strong>⚠️ NEVER use API keys with withdrawal permissions for trading bots.</strong> If a bot gets compromised and your key has withdrawal rights, you lose everything immediately. Keep withdrawal permissions off.
+    </div>
+  </div>
+
+  <!-- Safety Checklist -->
+  <div class="step-card" id="safety">
+    <div class="step-number">🛡️</div>
+    <h2>Risk Management & Safety Checklist</h2>
+    <p>Before activating any bot, run through this checklist. Automations can cause significant losses if left unmanaged.</p>
+
+    <ul class="checklist">
+      <li><strong>Start with dry-run/paper mode</strong> — always test strategies in simulated mode first, even if they look good on backtest</li>
+      <li><strong>Never invest more than you can afford to lose</strong> — 1–5% of your total portfolio in any single bot strategy</li>
+      <li><strong>Always set stop losses</strong> — every bot setup should have a hard stop loss defined before activation</li>
+      <li><strong>Monitor weekly minimum</strong> — bots need oversight. Markets can move fast; check in at least every 3 days</li>
+      <li><strong>Use API keys with minimal permissions</strong> — no withdrawals, ever, for bot keys</li>
+      <li><strong>Set up Telegram alerts</strong> (Freqtrade supports this) — get notified of trades and issues immediately</li>
+      <li><strong>Understand max drawdown</strong> — even good strategies can draw down 15–30%. Know your risk tolerance before setting allocation</li>
+      <li><strong>Don't over-leverage</strong> — leverage amplifies both gains AND losses. Start with no leverage (spot only)</li>
+      <li><strong>Keep bot funds separate</strong> — use a sub-account or separate wallet if your exchange supports it</li>
+      <li><strong>Test in bear AND bull markets</strong> — backtest across multiple market conditions before committing capital</li>
+    </ul>
+
+    <div class="success-box">
+      <strong>Our approach:</strong> We run Freqtrade in dry-run mode on a $10,000 simulated portfolio and only scale up once a strategy proves itself over 4+ weeks of live paper trading. Capital preservation first.
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <h2>Ready to Start Automating?</h2>
+    <p>Pick your level above and follow the steps. We recommend starting with <strong>Binance DCA bot</strong> — it takes 5 minutes and you can learn the ropes with zero risk.</p>
+    <a href="https://www.binance.com" class="btn" target="_blank" style="margin-right:12px;">Start on Binance →</a>
+    <a href="best-crypto-trading-bots.html" class="btn btn-outline">Read Bot Reviews →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p><strong>CryptoWedge</strong> — affiliate links may earn us a commission at no extra cost to you.</p>
+    <p>Not financial advice. Crypto involves risk. Always do your own research.</p>
+    <p class="disclaimer">Disclaimer: This is not financial advice. All automated trading strategies carry risk of loss. We share our own testing methodology and results — your results may vary. Always test in dry-run mode first. Some links are affiliate links — we may earn a commission if you sign up through them, at no additional cost to you.</p>
+  </div>
+</footer>
+
+</body>
+</html>
